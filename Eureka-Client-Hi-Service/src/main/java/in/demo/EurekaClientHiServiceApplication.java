@@ -1,14 +1,16 @@
-package in.ineuron;
+package in.demo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import org.springframework.cloud.openfeign.EnableFeignClients;
 
 @SpringBootApplication
 @EnableDiscoveryClient
-public class EurekaClientHelloServiceApplication {
+@EnableFeignClients
+public class EurekaClientHiServiceApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(EurekaClientHelloServiceApplication.class, args);
+		SpringApplication.run(EurekaClientHiServiceApplication.class, args);
 	}
 }
